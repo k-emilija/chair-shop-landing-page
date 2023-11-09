@@ -1,0 +1,52 @@
+:root {
+  /* FONT, HEADING, PARAGRAPH AND LINK SIZES */
+  --body-font: "Inter", sans-serif;
+  --h1-size: 2.5rem;
+  --h1-weight: 700;
+  --h2-size: 2rem;
+  --h2-weight: 700;
+  --h3-size: 1.25rem;
+  --h2-weight: 600;
+
+  --p-size: 1rem;
+  --primary-nav-size: 1rem;
+  --footer-size: 0.75rem;
+  --card-price-size: 1.25rem;
+  --card-price-weight: 600;
+
+  --line-height-sm: 1.1;
+  --line-height-lg: 1.7;
+  --letter-spacing-sm: -0.03125rem;
+  --letter-spacing-md: -0.0625rem;
+
+  /* COLORS */
+  --text-dark: #343a40;
+  --text-light: #fff;
+  --dark-grey: #444444;
+  --light-grey: #d9d9d9;
+  --primary-accent: #087f5b;
+
+  /* BUTTONS */
+  --button-font-weight: 500;
+  --primary-btn-size: 1rem;
+  --secondary-btn-size: 1rem;
+  --card-btn-size: 0.875rem;
+  --footer-btn-size: 0.75rem;
+
+  /* SPACING */
+  --standard-width: 60rem;
+  /* 16, 20, 32, 48, 64, 96*/
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.25rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+  --section-spacing: 6rem;
+
+  /* BORDER RADIUS */
+  --border-radius-sm: 1rem;
+  --border-radius-bg: 6.25rem;
+
+  /* SHADOWS */
+  --card-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
