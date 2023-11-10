@@ -43,11 +43,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar conatiner">
+        <img src="assets/logo-sm.png" alt="Riga Chairs Logo" />
+        <ul class="main-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">About</a></li>
+          <li><a href="#testimonial">Products</a></li>
+          <li><a href="#bestsellers">Contacts </a></li>
+        </ul>
+        <div class="nav-icons">🎏🎏🎏</div>
+      </nav>
+    </header>
     <main>
       <!-- Hero Section -->
       <section id="hero" class="grid-2-cols container">
-        <div class="header-text-box">
+        <div class="hero-text-box">
           <h1>
             We design, refine and create better furniture, for a better life
           </h1>
@@ -57,12 +68,15 @@
             combination of beauty and comfort, a harmony that will positively
             impact your well-being.
           </p>
-          <button class="primary-button">Shop chairs</button>
-          <button class="secondary-button with-icon">
-            Learn more <img src="assets/arrow-right-dark.svg" />
-          </button>
+          <div class="flex-container">
+            <button class="primary-button">Shop chairs</button>
+            <button class="secondary-button with-icon">
+              <span class="flex-item">Learn more</span>
+              <img src="assets/arrow-right-dark.svg" />
+            </button>
+          </div>
         </div>
-        <img src="assets/hero.jpg" alt="Green chair with wooden legs" />
+        <img src="assets/hero.png" alt="Green chair with wooden legs" />
       </section>
       <!-- Features Section -->
       <section id="features"></section>
