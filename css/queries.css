@@ -19,17 +19,33 @@ because it prevents older browsers that don't know about media queries from just
 @media only screen and (max-width: 62rem) {
   /* Variables, General style, and Reusable Classes*/
   :root {
-    --h1-size: 2.25rem;
+    --h1-size: 2rem;
+    --h2-size: 1.75rem;
+    --primary-btn-size: 0.75rem;
+    --secondary-btn-size: 0.75rem;
   }
 
   body {
     margin: 0 var(--spacing-lg);
   }
 
+  h2 {
+    text-align: center;
+  }
+
   .grid-2-cols,
   .grid-3-cols {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+    width: 85%;
+  }
+
+  .primary-button {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .secondary-button {
+    margin: 0 var(--spacing-xs);
   }
 
   .hero,
@@ -58,11 +74,14 @@ because it prevents older browsers that don't know about media queries from just
     justify-content: center;
   }
 
-  .hero img {
-    width: 85%;
-    max-width: 100%;
-    align-self: center;
-    justify-self: center;
+  /* Features */
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -72,25 +91,17 @@ because it prevents older browsers that don't know about media queries from just
 
 @media only screen and (max-width: 28.75rem) {
   /* Variables, General Style, and Reusable Classes*/
-  :root {
-    --h1-size: 2rem;
-    --primary-btn-size: 0.75rem;
-    --secondary-btn-size: 0.75rem;
-  }
-
   body {
     margin: 0 var(--spacing-sm);
   }
 
-  .primary-button {
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
-
-  .secondary-button {
-    margin: 0 var(--spacing-xs);
+  .grid-2-cols,
+  .grid-3-cols {
+    width: 100%;
   }
 
   /* Navigation */
+
   .main-nav li a:link,
   .main-nav li a:visited {
     margin: 0 var(--spacing-xs);
