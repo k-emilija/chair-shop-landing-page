@@ -1,0 +1,22 @@
+/***** IMPORTANT NOTE *****/
+
+/* 
+I write:
+@media only screen and (max-width: rem) {
+} 
+
+instead of:
+@media (max-width: rem) {
+} 
+
+because it prevents older browsers that don't know about media queries from just using this style all the time*/
+
+/* 
+
+/**************************/
+/* BELOW  960px (Tablets) */
+/**************************/
+
+/**************************/
+/* BELOW  460px (Phones) */
+/**************************/
