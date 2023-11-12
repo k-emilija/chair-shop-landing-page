@@ -17,7 +17,7 @@ because it prevents older browsers that don't know about media queries from just
 /* BELOW  960px (Tablets) */
 /**************************/
 @media only screen and (max-width: 62rem) {
-  /* Variables and general style*/
+  /* Variables, General style, and Reusable Classes*/
   :root {
     --h1-size: 2.25rem;
   }
@@ -26,20 +26,28 @@ because it prevents older browsers that don't know about media queries from just
     margin: 0 var(--spacing-lg);
   }
 
+  .grid-2-cols,
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .hero,
+  .features,
+  .testimonial {
+    margin-bottom: var(--spacing-lg);
+  }
+
   /* Navigation */
   .navbar {
     flex-direction: column;
     gap: var(--spacing-sm);
   }
 
-  /* Hero section */
-  .main-nav li a {
+  /* Hero Section */
+  .main-nav li a:link,
+  .main-nav li a:visited {
     margin: 0 var(--spacing-sm);
-  }
-
-  .grid-2-cols {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
   }
 
   .hero-text-box {
@@ -63,7 +71,7 @@ because it prevents older browsers that don't know about media queries from just
 /**************************/
 
 @media only screen and (max-width: 28.75rem) {
-  /* Variables and general style*/
+  /* Variables, General Style, and Reusable Classes*/
   :root {
     --h1-size: 2rem;
     --primary-btn-size: 0.75rem;
@@ -83,11 +91,12 @@ because it prevents older browsers that don't know about media queries from just
   }
 
   /* Navigation */
-  .main-nav li a {
+  .main-nav li a:link,
+  .main-nav li a:visited {
     margin: 0 var(--spacing-xs);
   }
 
-  /* Hero section */
+  /* Hero Section */
   .hero img {
     width: 95%;
     max-width: 100%;
