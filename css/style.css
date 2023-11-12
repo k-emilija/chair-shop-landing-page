@@ -67,6 +67,7 @@
 body {
   font-family: var(--body-font);
   color: var(--text-dark);
+  margin: 0 var(--spacing-xs);
 }
 
 h1 {
@@ -135,7 +136,7 @@ footer {
 
 .primary-button {
   text-decoration: none;
-  font-size: var(--button-size);
+  font-size: var(--primary-btn-size);
   font-weight: var(--button-font-weight);
   text-transform: uppercase;
   border: none;
@@ -153,7 +154,7 @@ footer {
 
 .secondary-button {
   text-decoration: none;
-  font-size: var(--button-size);
+  font-size: var(--secondary-btn-size);
   font-weight: var(--button-font-weight);
   border: none;
   border-radius: var(--border-radius-bg);
@@ -252,7 +253,7 @@ header {
   margin-bottom: var(--spacing-md);
 }
 
-#hero img {
+.hero img {
   display: block;
   height: 100%;
   width: 100%;
