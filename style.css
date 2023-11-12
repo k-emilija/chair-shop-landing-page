@@ -134,6 +134,7 @@ footer {
 }
 
 .primary-button {
+  text-decoration: none;
   font-size: var(--button-size);
   font-weight: var(--button-font-weight);
   text-transform: uppercase;
@@ -151,6 +152,7 @@ footer {
 }
 
 .secondary-button {
+  text-decoration: none;
   font-size: var(--button-size);
   font-weight: var(--button-font-weight);
   border: none;
