@@ -41,24 +41,34 @@
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar container">
-        <img src="assets/logo-sm.png" alt="Riga Chairs Logo" />
+        <a href="#"><img src="assets/logo-sm.png" alt="Riga Chairs Logo" /></a>
         <ul class="main-nav">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#features">About</a></li>
-          <li><a href="#testimonial">Products</a></li>
-          <li><a href="#bestsellers">Contacts </a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contacts </a></li>
         </ul>
-        <div class="nav-icons">🎏🎏🎏</div>
+        <div class="nav-icons">
+          <i class="lar la-heart main-nav-icon"></i>
+          <i class="las la-shopping-basket main-nav-icon"></i>
+          <i class="las la-user-circle main-nav-icon"></i>
+        </div>
       </nav>
     </header>
     <div class="line container"></div>
     <main>
       <!-- Hero Section -->
-      <section id="hero" class="grid-2-cols container">
+      <section class="hero grid-2-cols container">
         <div class="hero-text-box">
           <h1>
             We design, refine and create better furniture, for a better life
@@ -79,14 +89,64 @@
         </div>
         <img src="assets/hero.png" alt="Green chair with wooden legs" />
       </section>
+
       <!-- Features Section -->
-      <section id="features"></section>
+      <section class="features container">
+        <h2>What makes our furniture special</h2>
+        <div class="grid-3-cols">
+          <div>
+            <p class="features-title"><strong>Science meets design</strong></p>
+            <p class="features-text">
+              Precision engineering and innovative design come together in our
+              furniture, offering a harmonious blend of style and support.
+            </p>
+          </div>
+
+          <div>
+            <p class="features-title">
+              <strong>Maximal comfort</strong>
+            </p>
+            <p class="features-text">
+              Experience pure comfort with ergonomic features and plush
+              cushioning, making our furniture your ultimate relaxation choice.
+            </p>
+          </div>
+
+          <div>
+            <p class="features-title">
+              <strong>Ethical and sustainable</strong>
+            </p>
+            <p class="features-text">
+              Experience luxury with a clear conscience, as our furniture are
+              crafted with eco-friendly materials and responsible practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Testimonial Section -->
-      <section id="testimonial"></section>
+      <section class="testimonial container">
+        <div class="grid-3-cols">
+          <img src="" alt="Person sitting in chair" />
+          <div class="testimonial-box">
+            <h2>“I Can't Imagine Life Without My Leisure Chair”</h2>
+            <blockquote class="testimonial-text">
+              From the day I welcomed my modern leisure chair into my home, it
+              has transformed the way I relax and unwind. Its exceptional
+              comfort and sleek design have made it an integral part of my
+              interior. I can't imagine my living space without it. Thank you
+              for creating this masterpiece.
+            </blockquote>
+            <p class="testimonial-author">— Emily Anderson</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Bestseller Section -->
-      <section id="bestsellers"></section>
+      <section class="bestseller container"></section>
     </main>
+
     <div class="line container"></div>
-    <footer></footer>
+    <footer class="container"></footer>
   </body>
 </html>

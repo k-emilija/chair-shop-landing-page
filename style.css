@@ -26,6 +26,8 @@
   --light-grey: #d9d9d9;
   --primary-accent: #087f5b;
   --primary-button-hover: #099268;
+  --icon-color: #087f5b;
+  --icon-hover-color: #099268;
 
   /* BUTTONS */
   --button-font-weight: 500;
@@ -33,6 +35,9 @@
   --secondary-btn-size: 1rem;
   --card-btn-size: 0.875rem;
   --footer-btn-size: 0.75rem;
+
+  /* ICONS */
+  --nav-icon-size: 1.5rem;
 
   /* SPACING */
   --standard-width: 60rem;
@@ -91,6 +96,43 @@ p {
   font-weight: 400;
 }
 
+footer {
+  font-size: var(--footer-size);
+  color: var(--dark-grey);
+}
+
+/* REUSABLE CLASSES */
+
+.container {
+  max-width: var(--standard-width);
+  margin: 0 auto;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 0 0 auto;
+}
+
+.line {
+  border-bottom: solid 0.0625rem var(--light-grey);
+}
+
 .primary-button {
   font-size: var(--button-size);
   font-weight: var(--button-font-weight);
@@ -129,10 +171,6 @@ p {
   align-items: center;
 }
 
-.flex-item {
-  flex: 0 0 auto;
-}
-
 .with-icon > img {
   width: 1.5rem;
   height: 1.5rem;
@@ -143,44 +181,13 @@ p {
   transform: translateX(0.25rem);
 }
 
-section {
+/* COMPONENT STYLES */
+
+.hero,
+.features,
+.testimonial {
   margin-bottom: var(--section-spacing);
 }
-
-footer {
-  font-size: var(--footer-size);
-  color: var(--dark-grey);
-}
-
-.line {
-  border-bottom: solid 0.0625rem var(--light-grey);
-}
-
-/* REUSABLE CLASSES */
-
-.container {
-  max-width: var(--standard-width);
-  margin: 0 auto;
-}
-
-.grid-2-cols {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
-}
-
-.grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 5rem;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-}
-
-/* COMPONENT STYLES */
 
 /* Navigation */
 header {
@@ -219,6 +226,20 @@ header {
   opacity: 0.8;
 }
 
+.main-nav-icon {
+  font-size: var(--nav-icon-size);
+  color: var(--icon-color);
+}
+
+.main-nav-icon:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.main-nav-icon:hover {
+  color: var(--icon-hover-color);
+  cursor: pointer;
+}
+
 /* Hero section */
 .hero-text-box {
   align-self: center;
@@ -237,6 +258,12 @@ header {
   border-radius: 1rem;
 }
 
-#hero {
+.hero {
   margin-top: var(--spacing-lg);
 }
+
+/* Features section */
+
+/* Testimonial section */
+/* Bestseller section */
+/* Footer section */
