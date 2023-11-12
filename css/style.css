@@ -152,11 +152,11 @@ footer {
   background-color: var(--primary-button-hover);
 }
 
-/* LINK DOESNT WORK */
 .secondary-button:link,
 .secondary-button:visited {
   font-size: var(--secondary-btn-size);
   font-weight: var(--button-font-weight);
+  color: var(--body-font);
   text-decoration: none;
   margin: 0 var(--spacing-md);
   transition: all 0.15s ease;
@@ -165,7 +165,6 @@ footer {
 .secondary-button:hover,
 .secondary-button:active {
   opacity: 0.8;
-  color: var(--body-font);
 }
 
 .with-icon {
@@ -182,6 +181,7 @@ footer {
 
 .with-icon:hover > img {
   transform: translateX(0.25rem);
+  opacity: 0.8;
 }
 
 /* COMPONENT STYLES */
