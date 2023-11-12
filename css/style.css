@@ -6,7 +6,7 @@
   --h2-size: 2rem;
   --h2-weight: 700;
   --h3-size: 1.25rem;
-  --h2-weight: 600;
+  --h3-weight: 600;
 
   --p-size: 1rem;
   --primary-nav-size: 1rem;
@@ -38,6 +38,7 @@
 
   /* ICONS */
   --nav-icon-size: 1.5rem;
+  --features-icon-size: 2rem;
 
   /* SPACING */
   --standard-width: 60rem;
@@ -94,6 +95,7 @@ h3 {
 
 p {
   font-size: var(--p-size);
+  line-height: var(--line-height-lg);
   font-weight: 400;
 }
 
@@ -251,7 +253,6 @@ header {
 }
 
 .hero-text-box p {
-  line-height: var(--line-height-lg);
   margin-bottom: var(--spacing-md);
 }
 
@@ -269,6 +270,13 @@ header {
 
 /* Features section */
 
+.features-icon {
+  font-size: var(--features-icon-size);
+  margin-bottom: var(--spacing-sm);
+  color: var(--icon-color);
+}
 /* Testimonial section */
+
 /* Bestseller section */
+
 /* Footer section */
