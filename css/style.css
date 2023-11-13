@@ -213,7 +213,7 @@ header {
   width: 100%;
 }
 
-.navbar a img {
+.navbar img {
   width: 100%;
   max-width: 100%;
   height: var(--logo-height);

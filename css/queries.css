@@ -75,6 +75,14 @@ because it prevents older browsers that don't know about media queries from just
     justify-content: center;
   }
 
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   /* Features */
 
   .features {
