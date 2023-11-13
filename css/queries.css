@@ -143,4 +143,10 @@ because it prevents older browsers that don't know about media queries from just
     width: 95%;
     max-width: 100%;
   }
+
+  /* Testimonial */
+
+  .testimonial {
+    width: 100%;
+  }
 }
