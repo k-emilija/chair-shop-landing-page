@@ -7,6 +7,10 @@
   --h2-weight: 700;
   --h3-size: 1.25rem;
   --h3-weight: 600;
+  --testimonial-size: 1.5rem;
+  --testimonial-weight: 700;
+  --price-size: 1.25rem;
+  --price-weight: 600;
 
   --p-size: 1rem;
   --primary-nav-size: 1rem;
@@ -25,6 +29,8 @@
   --dark-grey: #444444;
   --light-grey: #d9d9d9;
   --primary-accent: #087f5b;
+  --testimonial-text-color: #e6fcf5;
+  --author-text-color: #c3fae8;
   --primary-button-hover: #099268;
   --icon-color: #087f5b;
   --icon-hover-color: #099268;
@@ -49,6 +55,7 @@
   --spacing-lg: 3rem;
   --spacing-xl: 4rem;
   --section-spacing: 6rem;
+  --testimonial-padding: 1.5rem;
 
   /* BORDER RADIUS */
   --border-radius-sm: 1rem;
@@ -277,6 +284,38 @@ header {
 }
 
 /* Testimonial section */
+
+.testimonial img {
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+}
+
+.testimonial {
+  background-color: var(--primary-accent);
+  color: var(--text-light);
+  padding: var(--testimonial-padding);
+  border-radius: var(--border-radius-sm);
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h3 {
+  font-size: var(--testimonial-size);
+  font-weight: var(--testimonial-weight);
+}
+
+.testimonial-text {
+  color: var(--testimonial-text-color);
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-author {
+  color: var(--testimonial-text-color);
+}
 
 /* Bestseller section */
 
