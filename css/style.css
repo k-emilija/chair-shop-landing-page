@@ -7,14 +7,14 @@
   --h2-weight: 700;
   --h3-size: 1.25rem;
   --h3-weight: 600;
-  --testimonial-size: 1.5rem;
-  --testimonial-weight: 700;
-  --price-size: 1.25rem;
-  --price-weight: 600;
-
   --p-size: 1rem;
+
+  --logo-height: 2rem;
   --primary-nav-size: 1rem;
   --footer-size: 0.75rem;
+
+  --testimonial-size: 1.5rem;
+  --testimonial-weight: 700;
   --card-price-size: 1.25rem;
   --card-price-weight: 600;
 
@@ -211,6 +211,12 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.navbar a img {
+  width: 100%;
+  max-width: 100%;
+  height: var(--logo-height);
 }
 
 .main-nav {
