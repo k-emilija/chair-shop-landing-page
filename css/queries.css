@@ -34,19 +34,20 @@ because it prevents older browsers that don't know about media queries from just
     text-align: center;
   }
 
-  .grid-2-cols,
-  .grid-3-cols {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    width: 85%;
-  }
-
+  /* Nemainās izmērs */
   .primary-button {
     padding: var(--spacing-xs) var(--spacing-sm);
   }
 
   .secondary-button {
     margin: 0 var(--spacing-xs);
+  }
+
+  .grid-2-cols,
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    width: 85%;
   }
 
   .hero,
