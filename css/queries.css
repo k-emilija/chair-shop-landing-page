@@ -32,6 +32,7 @@ because it prevents older browsers that don't know about media queries from just
 
   h2 {
     text-align: center;
+    margin-bottom: var(--spacing-md);
   }
 
   .grid-2-cols,
@@ -43,9 +44,12 @@ because it prevents older browsers that don't know about media queries from just
 
   .hero,
   .features,
-  .testimonial,
   .bestseller {
     margin-bottom: var(--spacing-xl);
+  }
+
+  .testimonial {
+    margin-bottom: calc(var(--spacing-xl) + 2rem);
   }
 
   .hero,
