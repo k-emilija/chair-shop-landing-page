@@ -43,8 +43,21 @@ because it prevents older browsers that don't know about media queries from just
 
   .hero,
   .features,
-  .testimonial {
+  .testimonial,
+  .bestseller {
     margin-bottom: var(--spacing-xl);
+  }
+
+  .hero,
+  .testimonial,
+  .features,
+  .bestseller,
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   /* Navigation */
@@ -67,35 +80,9 @@ because it prevents older browsers that don't know about media queries from just
     justify-content: center;
   }
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* Features */
-
-  .features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
   /* Testimonial */
   .testimonial-box {
     grid-column: 1;
-  }
-
-  .testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   .testimonial .grid-3-cols {
@@ -104,6 +91,39 @@ because it prevents older browsers that don't know about media queries from just
 
   .testimonial {
     width: 85%;
+  }
+
+  /* Bestsellers */
+
+  .bestseller-heading a {
+    display: none;
+  }
+
+  .bestseller {
+    text-align: start;
+  }
+
+  .chair-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chair-price span {
+    margin-right: var(--spacing-lg);
+  }
+
+  /* object-fit: cover; - img will automatically get cut */
+
+  .mobile:link,
+  .mobile:visited {
+    display: flex;
+  }
+
+  /* Footer */
+  .developer-info {
+    grid-column: 1;
   }
 }
 
@@ -139,5 +159,11 @@ because it prevents older browsers that don't know about media queries from just
 
   .testimonial {
     width: 100%;
+  }
+
+  /* Bestsellers */
+
+  .chair-price span {
+    margin-right: var(--spacing-md);
   }
 }

@@ -388,10 +388,6 @@ header {
   background-color: var(--primary-button-hover);
 }
 
-.bestseller .grid-3-cols {
-  margin-bottom: var(--spacing-lg);
-}
-
 .bestseller-heading {
   display: flex;
   justify-content: space-between;
@@ -400,8 +396,14 @@ header {
 
 .bestseller-heading .secondary-button:link,
 .bestseller-heading .secondary-button:visited {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem var(--spacing-sm);
+}
+
+.mobile:link,
+.mobile:visited {
+  font-size: 1rem;
+  margin-top: var(--spacing-lg);
+  display: none;
 }
 
 /* Footer section */
