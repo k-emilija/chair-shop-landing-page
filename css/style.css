@@ -174,23 +174,6 @@ p {
   opacity: 0.8;
 }
 
-.with-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.with-icon > img {
-  width: 1.5rem;
-  height: 1.5rem;
-  transition: transform 0.25s ease;
-}
-
-.with-icon:hover > img {
-  transform: translateX(0.25rem);
-  opacity: 0.8;
-}
-
 /* COMPONENT STYLES */
 
 .hero,
@@ -442,11 +425,15 @@ footer p {
   font-weight: var(--button-font-weight);
   color: var(--body-font);
   text-decoration: none;
-  margin: 0 var(--spacing-md) 0 0;
   transition: all 0.15s ease;
 }
 
 .footer-button:hover,
 .footer-button:active {
   color: #087f5b;
+}
+
+.footer-button:link:not(:last-child),
+.footer-button:visited:not(:last-child) {
+  margin: 0 var(--spacing-xs) 0 0;
 }

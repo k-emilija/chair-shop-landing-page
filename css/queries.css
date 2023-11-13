@@ -125,6 +125,10 @@ because it prevents older browsers that don't know about media queries from just
   .developer-info {
     grid-column: 1;
   }
+
+  footer p:not(:first-child) {
+    margin-bottom: 0;
+  }
 }
 
 /**************************/
@@ -165,5 +169,13 @@ because it prevents older browsers that don't know about media queries from just
 
   .chair-price span {
     margin-right: var(--spacing-md);
+  }
+
+  .chair-price span {
+    margin-right: var(--spacing-sm);
+  }
+
+  .bestseller {
+    width: 90%;
   }
 }
